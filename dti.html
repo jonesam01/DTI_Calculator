@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DTI Calculator</title>
+    <link rel="stylesheet" href="dti.css">
+</head>
+<body>
+    <h2>DTI Calculator</h2>  <!-- DTI = monthly debt / gross monthly income -->
+    <h3>Enter your information into each field to calculate your debt to income ratio</h3>
+    <br><br>
+    <div class="container">
+        <form action="" id="calculator">
+            <label for="gross-income">Gross Income:</label><br>
+            <input type="number" id="gross-income" name="gross-income" value="0"><br><br>
+
+            <label for="debts">Total amount of monthly debt payments you are obligated to make each month:</label><br>
+            <input type="number" id="debts" name="debts" value="0"><br><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+    <h3>Your DTI is: <span id="results"> </span>%</h3>
+
+    <script src="dti.js"></script>
+</body>
+</html>
