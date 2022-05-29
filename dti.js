@@ -1,17 +1,24 @@
-let grossIncome = document.getElementById("gross-income");
-let debtTotal = document.getElementById("debts");
-const results = document.querySelector('#results');
+let grossIncome = document.getElementById("gross-income").value;
+let debtTotal = document.getElementById("debts").value;
+let result = document.querySelector('#results');
 
 
-function dti() {
-    let userIncome = grossIncome.textContent;
-    let userDebt = debtTotal.textContent;
-    let dtiPercent = Math((userDebt / userIncome) * 100);
-    return dtiPercent;
+let percentDTI = ((debtTotal / grossIncome) * (100));
+console.log(percentDTI);
+
+// result.innerHTML = percentDTI;
+
+
+
+function computeDTI() {
+    result.innerHTML = percentDTI;
 }
 
-function calculate() {
-    results.innerHTML = dti;
-}
 
-
+// function computeDTI() {
+//     let grossIncome = document.getElementById('gross-income').value;
+//     let debtTotal = document.getElementById("debts").value;
+//     let results = document.querySelector('#results');
+//     let percentDTI = Math((userDebt / userIncome) * 100);
+//     results.innerHTML = percentDTI;
+// }
