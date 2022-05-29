@@ -26,6 +26,7 @@ body {
     padding: auto;
     margin: auto;
     /* border: 1px solid red; */
+    border-radius: 5em;
 
     align-items: center;
 
@@ -33,15 +34,21 @@ body {
 }
 
 input {
-    background-color: rgba(199, 220, 199, 0.9);
-    border: none;
+    height: 2em;
+    background-color: #539987;
+    border: none inset;
+    border-radius: 5em;
+    &:focus {
+		border: none;
+		outline: 0 !important;
+		outline-style: none;
+	}
 }
 
 input[type=submit] {
-    border-radius: 10em;
+    box-shadow: 0 4px 8px 0 rgba(255, 247, 247, 0.352), 0 6px 20px 0 rgba(255, 247, 247, 0.352);
 }
 
 input[type=number] {
-    background: white;
     text-align: right;
 }
