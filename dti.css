@@ -3,11 +3,10 @@
 /* actually make into a calculator */
 
 
-* {
+*, *::before, *::after {
     margin: auto;
     box-sizing: border-box;
-    background-color: #539987;
-
+    --base: rgb(83, 153, 135);
 }
 
 body {
@@ -16,7 +15,12 @@ body {
 
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+
+    background-color: var(--base);
+    
+    cursor: pointer;
 }
+
 
 .container {
     display: flex;
@@ -25,30 +29,47 @@ body {
     height: 400px;
     padding: auto;
     margin: auto;
-    /* border: 1px solid red; */
-    border-radius: 5em;
 
     align-items: center;
+    
+    border: none;
+    border-radius: 5em;
+    background: linear-gradient(-45deg, rgba(0,0,0,0.20), rgba(255,255,255,0.20));
 
-    box-shadow: 0 4px 8px 0 rgba(255, 247, 247, 0.352), 0 6px 20px 0 rgba(255, 247, 247, 0.352);
-}
+    box-shadow: 12px 12px 16px 0 rgba(43, 80, 70, 0.70), 
+        -8px -8px 12px 0 rgba(136, 191, 177, 0.60);
+    }
+
 
 input {
-    height: 2em;
-    background-color: #539987;
-    border: none inset;
+    height: 2.2em;
+    background-color: var(--lighten);
+    
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;  
+
     border-radius: 5em;
-    &:focus {
-		border: none;
-		outline: 0 !important;
-		outline-style: none;
-	}
+    border: none;
+    box-shadow: var(--inset);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 1em;
 }
 
 input[type=submit] {
-    box-shadow: 0 4px 8px 0 rgba(255, 247, 247, 0.352), 0 6px 20px 0 rgba(255, 247, 247, 0.352);
+    width: 7em;
+    box-shadow: 12px 12px 16px 0 rgba(43, 80, 70, 0.70), 
+        -8px -8px 12px 0 rgba(136, 191, 177, 0.60);
 }
 
 input[type=number] {
     text-align: right;
+    background-color: var(--base);
+    box-shadow: inset 12px 12px 16px 0 rgba(43, 80, 70, 0.70), 
+    inset -8px -8px 12px 0 rgba(136, 191, 177, 0.60);
 }

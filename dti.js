@@ -1,24 +1,20 @@
-let grossIncome = document.getElementById("gross-income").value;
-let debtTotal = document.getElementById("debts").value;
-let result = document.querySelector('#results');
 
 
-let percentDTI = ((debtTotal / grossIncome) * (100));
-console.log(percentDTI);
-
-// result.innerHTML = percentDTI;
-
+let grossIncome; 
+let debtTotal;
+let result;
 
 
-function computeDTI() {
-    result.innerHTML = percentDTI;
+function computeDTI(event, inputText) {
+    // event.preventDefault();
+    grossIncome = document.getElementById('gross-income').value;
+    debtTotal = document.getElementById('debts').value;
+    // result = document.querySelector('#results');
+
+    percentDTI = ((debtTotal / grossIncome) * (100));
+    alert('your dti is ' + percentDTI + '%');
+    document.getElementById('results').innerHTML = percentDTI; 
+    
+    // return false;
 }
 
-
-// function computeDTI() {
-//     let grossIncome = document.getElementById('gross-income').value;
-//     let debtTotal = document.getElementById("debts").value;
-//     let results = document.querySelector('#results');
-//     let percentDTI = Math((userDebt / userIncome) * 100);
-//     results.innerHTML = percentDTI;
-// }
