@@ -8,12 +8,15 @@
     <link rel="stylesheet" href="dti.css">
 </head>
 <body>
-    <h2>DTI Calculator</h2>  <!-- DTI = monthly debt / gross monthly income -->
-    <h3>Enter your information into each field to calculate your debt to income ratio</h3>
+    <div id="directions">
+        <h2>DTI Calculator</h2>  <!-- DTI = monthly debt / gross monthly income -->
+        <h3>Enter your information into each field to calculate your debt to income ratio</h3>
+    </div>
+   
     <br><br>
     <div class="container">
         <form action="" id="calculator" target="_self">
-            <label for="gross-income">Gross Income:</label><br><br>
+            <label for="gross-income">Gross income from all sources:</label><br><br>
             <input type="number" id="gross-income" name="gross-income" placeholder="0" min="1"><br><br>
 
             <label for="debts">Total amount of monthly debt payments you are obligated to make each month:</label><br><br>

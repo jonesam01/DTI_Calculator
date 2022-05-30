@@ -1,7 +1,4 @@
-/* remove arrows from input boxes? */
-/* try neomorphism or claymorphism styling */
 /* actually make into a calculator */
-
 
 *, *::before, *::after {
     margin: auto;
@@ -13,14 +10,19 @@ body {
     padding: auto;
     margin: 5em auto;
 
+    color: white;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+
 
     background-color: var(--base);
     
     cursor: pointer;
 }
 
+#directions {
+    width: 25em;
+}
 
 .container {
     display: flex;
@@ -40,6 +42,12 @@ body {
         -8px -8px 12px 0 rgba(136, 191, 177, 0.60);
     }
 
+#calculator {
+    width: 20em;
+    padding: 2em;
+
+    opacity: 90%;
+}
 
 input {
     height: 2.2em;
@@ -55,6 +63,11 @@ input {
     box-shadow: var(--inset);
 }
 
+::placeholder {
+    color: white;
+    opacity: 50%;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -63,6 +76,10 @@ input::-webkit-inner-spin-button {
 
 input[type=button] {
     width: 10em;
+
+    color: white;
+    opacity: 90%;
+
     box-shadow: 12px 12px 16px 0 rgba(43, 80, 70, 0.70), 
         -8px -8px 12px 0 rgba(136, 191, 177, 0.60);
 }
