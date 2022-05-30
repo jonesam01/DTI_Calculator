@@ -13,8 +13,7 @@ function computeDTI() {
     debtTotal = document.getElementById('debts').value;
     // result = document.querySelector('#results');
 
-    percentDTI = ((debtTotal / grossIncome) * (100));
-    // alert('your dti is ' + percentDTI + '%');
+    percentDTI = Math.floor((debtTotal / grossIncome) * (100));
     
     // result.push("percentDTI");
     document.getElementById('results').innerHTML = percentDTI;
