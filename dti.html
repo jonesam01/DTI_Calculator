@@ -12,14 +12,14 @@
     <h3>Enter your information into each field to calculate your debt to income ratio</h3>
     <br><br>
     <div class="container">
-        <form action="" id="calculator">
+        <form action="" id="calculator" target="_self">
             <label for="gross-income">Gross Income:</label><br><br>
             <input type="number" id="gross-income" name="gross-income" placeholder="0" min="1"><br><br>
 
             <label for="debts">Total amount of monthly debt payments you are obligated to make each month:</label><br><br>
             <input type="number" id="debts" name="debts" placeholder="0" min="1"><br><br>
 
-            <input type="submit" value="submit" onclick="computeDTI()">
+            <input type="button" value="submit" onclick="computeDTI()">
         </form>
     </div>
     <br><br><br>

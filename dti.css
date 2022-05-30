@@ -61,7 +61,7 @@ input::-webkit-inner-spin-button {
     margin: 1em;
 }
 
-input[type=submit] {
+input[type=button] {
     width: 7em;
     box-shadow: 12px 12px 16px 0 rgba(43, 80, 70, 0.70), 
         -8px -8px 12px 0 rgba(136, 191, 177, 0.60);
